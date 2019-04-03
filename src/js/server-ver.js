@@ -28,6 +28,7 @@ jQuery('#ingredientsDesc').slick({
 });
 // ]]></script>
 
+
 // *********************** Page Bottom *************************************** //
 <script type="text/javascript" xml="space">// <![CDATA[
     function openCare(evt, careName) {

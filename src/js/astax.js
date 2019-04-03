@@ -23,21 +23,8 @@ $(document).ready(function(){
       }
     ]
   }); // testimonials slider
-  $('#usesSlider-imgs').slick({
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows: false,
-   // fade: true,
-   asNavFor: '#usesSlider-text'
-  });
-  $('#usesSlider-text').slick({
-    // appendArrows: '.use-text',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '#usesSlider-imgs',
-    dots: true,
-    // fade: false,
-    // centerMode: true,
-    focusOnSelect: true
-  });
 }); //doc ready
+
+const hello = (name) => {
+    return `hello ${name}`;
+};
