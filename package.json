@@ -15,7 +15,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "autoprefixer": "^9.4.6",
+    "autoprefixer": "^9.5.1",
     "chai": "^4.2.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
@@ -24,7 +24,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "mocha": "*"
+    "mocha": "^6.1.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
