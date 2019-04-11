@@ -67,20 +67,12 @@ $scTan-lt: #f1efe8;
     }
   } // heroBox
 } // hero
-#info {
+#howTo {
   position: relative;
   text-align: left;
   display: inline-block;
-  // display: flex;
 
-  .infoImg-left {
-    display: inline-block;
-    width: 24%;
-    float: left;
-    margin-top: -6rem;
-    margin-left: -1.3rem;
-  }
-  .info-text {
+  .howTo-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,14 +80,108 @@ $scTan-lt: #f1efe8;
     padding: 0 26%;
     text-align: center;
   }
-  .infoImg-right {
+  .howTo-img {
     display: inline-block;
     width: 75%;
     float: right;
     margin-top: 0;
-    // z-index: 1;
   }
 } // info
+#testimonials {
+  background-color: $bkgrndBlue;
+  background-image: url("../../images/white-icon.svg");
+  background-repeat: repeat;
+  background-size: 48px;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+}
+#testimonialsSlider {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  .slick-prev {
+    left: -10px;
+  }
+  .slick-next {
+    right: -10px;
+  }
+  .testimonial {
+    display: inline;
+    padding: 20px 60px;
+
+    h3 {
+      font-size: 2.3rem;
+      color: $blue700;
+    }
+    img {
+      width: 150px;
+      margin: 0 auto 20px auto;
+    }
+    blockquote {
+      font-size: 1.7rem;
+      margin: 0;
+      text-align: center;
+    }
+  }
+} // testimonials Slider
+.ingredients {
+  margin: 0 auto;
+
+  .ingredients-box{
+    background: linear-gradient(-21.19deg, $q10purpleLT 50%, $q10purple 50%);
+    text-align: center;
+    // margin-bottom: 5%;
+    padding-bottom: 5%;
+
+    h2 {
+      color: #FFF;
+      padding-top: 30px;
+      margin-bottom: 0;
+    }
+  } // ingredients-box
+  #ingredientsDesc {
+    margin: 30px auto 0 auto;
+    width: 80%;
+    background-color: #FFF;
+
+    .ingredientImg {
+      margin: 0 40px;
+      float: left;
+      display: inline-block;
+    }
+    img {
+      width: 320px;
+    }
+    .ingredient-text {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 30px;
+      width: 75%;
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+      h5 {
+        font-size: 25px;
+        font-weight: 300;
+        margin: 0 0 18px 0;
+      }
+    }
+    .slick-dots {
+      bottom: -10px;
+
+      li {
+        button:before {
+          color: $q10purple;
+          font-size: 30px;
+          line-height: 20px;
+        }
+      }
+    }
+  } // ingredientsDesc
+} // ingredients
+
 #products {
   position: relative;
   background: linear-gradient(#ffffff 0%, $scTan 80%);

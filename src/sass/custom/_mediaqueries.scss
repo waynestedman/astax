@@ -62,6 +62,50 @@
       max-height: 380px;
     }
   } // info
+  .ingredients {
+  .ingredients-box {
+    padding-bottom: 50px;
+    background: linear-gradient(-53deg, $q10purpleLT 50%, $q10purple 50%);
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  } // ingredients-box
+  #ingredientsDesc {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    .ingredientImg {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ingredient-text {
+      text-align: center;
+      padding-top: 0;
+      width: 90%;
+
+      h5 {
+        font-size: 20px;
+      }
+    } // ingredient-text
+    .slick-dots {
+      bottom: -4px;
+
+      li {
+        width: 14px;
+        height: 14px;
+
+        button:before {
+          font-size: 30px; // good size for server
+          // line-height: 16px;
+        } // button:before
+      } // li
+    } // slick-dots
+  } // ingredientsDesc
+} //ingredients
+
   #products {
     flex-direction: column;
 
