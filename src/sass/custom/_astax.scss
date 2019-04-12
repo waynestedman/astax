@@ -1,7 +1,8 @@
-// SC Colors:
+// Astax Colors:
 // main blue = $blue700
-$scTan: #fbecd9;
-$scTan-lt: #f1efe8;
+// dark gray = $gray700
+// hover gray = $gray400
+$astaxLtBlue = #d4eff1;
 
 .content-wrapper {
   @keyframes fadeEffect {
@@ -19,14 +20,14 @@ $scTan-lt: #f1efe8;
   .button-cta {
     font-size: 2rem;
     font-weight: 400;
-    background-color: $blue700;
+    background-color: $gray700;
     color: #fff;
     text-transform: uppercase;
     padding: 1rem 3rem;
-    border: 1px solid $blue700;
+    border: 1px solid $gray700;
 
     &:hover {
-      background-color: $blue400;
+      background-color: $gray400;
     }
   }
   .clearfix {
@@ -88,10 +89,6 @@ $scTan-lt: #f1efe8;
   }
 } // info
 #testimonials {
-  background-color: $bkgrndBlue;
-  background-image: url("../../images/white-icon.svg");
-  background-repeat: repeat;
-  background-size: 48px;
   padding: 3rem 0;
   margin-bottom: 4rem;
 }
@@ -112,7 +109,7 @@ $scTan-lt: #f1efe8;
 
     h3 {
       font-size: 2.3rem;
-      color: $blue700;
+      // color: $gray700;
     }
     img {
       width: 150px;
@@ -125,11 +122,12 @@ $scTan-lt: #f1efe8;
     }
   }
 } // testimonials Slider
-.ingredients {
+.ingredients-wrapper {
+  background: linear-gradient(#FFFFFF, $astaxLtBlue 50%, #FFFFFF 100%);
   margin: 0 auto;
 
   .ingredients-box{
-    background: linear-gradient(-21.19deg, $q10purpleLT 50%, $q10purple 50%);
+
     text-align: center;
     // margin-bottom: 5%;
     padding-bottom: 5%;
@@ -173,7 +171,7 @@ $scTan-lt: #f1efe8;
 
       li {
         button:before {
-          color: $q10purple;
+          // color: $q10purple;
           font-size: 30px;
           line-height: 20px;
         }
@@ -181,54 +179,3 @@ $scTan-lt: #f1efe8;
     }
   } // ingredientsDesc
 } // ingredients
-
-#products {
-  position: relative;
-  background: linear-gradient(#ffffff 0%, $scTan 80%);
-  padding-bottom: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
-
-  .product {
-    text-align: center;
-    flex-direction: column;
-    width: 40%;
-
-    .product-img {
-      margin-top: -10rem;
-    }
-    p {
-      margin-bottom: 2rem;
-    }
-  } // product
-} //products
-#regimen {
-  text-align: center;
-
-  h2 {
-    width: 100%;
-  }
-  .regimen-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-    .regimen {
-      flex-direction: column;
-      width: 30%;
-
-      img {
-        max-width: 295px;
-      }
-      span {
-        font-weight: 400;
-      }
-    } //regimen
-  } //regimen-wrapper
-} //regimen section
-#scm-banner {
-  width: 100%;
-} //scm-banner

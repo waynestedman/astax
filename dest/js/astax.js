@@ -11,18 +11,54 @@ $(document).ready(function () {
     speed: 1200,
     // cssEase: 'ease-in-out',
     infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    swipe: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipe: true // responsive: [
+    //   {
+    //     breakpoint: 800,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       infinite: true
+    //     }
+    //   }
+    // ]
+
+  }); // testimonials slider
+
+  $('#ingredientsDesc').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '#ingredientsSlider'
+  });
+  $('#ingredientsSlider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '#ingredientsDesc',
+    dots: false,
+    centerMode: true,
+    centerPadding: '60px',
+    focusOnSelect: true,
     responsive: [{
-      breakpoint: 800,
+      breakpoint: 1025,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 5
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
       }
     }]
-  }); // testimonials slider
+  });
 }); //doc ready
 
 var hello = function hello(name) {
