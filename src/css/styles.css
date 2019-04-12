@@ -190,9 +190,14 @@ body {
 }
 
 .content-wrapper h4 {
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 400;
   margin-bottom: 1rem;
+}
+
+.content-wrapper h5 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .content-wrapper .button-cta {
@@ -254,14 +259,17 @@ body {
 }
 
 #howTo {
+  margin-bottom: 6rem;
   position: relative;
   text-align: left;
   display: inline-block;
+  width: 100%;
 }
 
 #howTo .howTo-productDesc, #howTo .howTo-text {
+  padding-left: 4%;
   position: relative;
-  width: 50%;
+  width: 58%;
   z-index: 100;
 }
 
@@ -277,12 +285,29 @@ body {
 #testimonials {
   padding: 3rem 0;
   margin-bottom: 4rem;
+  position: relative;
+}
+
+#testimonials .testimonials-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#testimonials .quotes {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 4rem;
+  width: 10%;
+  z-index: 101;
 }
 
 #testimonialsSlider {
   width: 90%;
-  margin: 0 auto;
+  margin: -4.5rem auto 0 auto;
   text-align: center;
+  z-index: 102;
 }
 
 #testimonialsSlider .slick-prev {
@@ -298,8 +323,8 @@ body {
   padding: 20px 60px;
 }
 
-#testimonialsSlider .testimonial h3 {
-  font-size: 2.3rem;
+#testimonialsSlider .testimonial h5 {
+  margin-top: 1rem;
 }
 
 #testimonialsSlider .testimonial img {
@@ -311,6 +336,10 @@ body {
   font-size: 1.7rem;
   margin: 0;
   text-align: center;
+}
+
+#testimonialsSlider .testimonial blockquote span {
+  font-weight: 400;
 }
 
 .ingredients-wrapper {
@@ -369,6 +398,39 @@ body {
 .ingredients-wrapper #ingredientsDesc .slick-dots li button:before {
   font-size: 30px;
   line-height: 20px;
+}
+
+.ingredients-wrapper #info {
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  width: 70%;
+}
+
+.ingredients-wrapper #video {
+  margin: 0 auto;
+  width: 82%;
+}
+
+#blog {
+  position: relative;
+}
+
+#blog .blog-img {
+  position: relative;
+  width: 50%;
+}
+
+#blog .blog-text {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  padding-right: 8%;
+  width: 50%;
+}
+
+#blog .blog-text .blog-link {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 599px) {

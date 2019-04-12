@@ -13,9 +13,13 @@ $astaxLtBlue: #d4eff1;
     font-size: 3.5rem;
   }
   h4 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 400;
     margin-bottom: 1rem;
+  }
+  h5 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   .button-cta {
     font-size: 2rem;
@@ -64,15 +68,16 @@ $astaxLtBlue: #d4eff1;
   } // heroBox
 } // hero
 #howTo {
+  margin-bottom: 6rem;
   position: relative;
   text-align: left;
   display: inline-block;
+  width: 100%;
 
   .howTo-productDesc, .howTo-text {
-    // display: inline-block;
-    // text-align: left;
+    padding-left: 4%;
     position: relative;
-    width: 50%;
+    width: 58%;
     z-index: 100;
   }
   .howTo-img {
@@ -82,18 +87,32 @@ $astaxLtBlue: #d4eff1;
     right: 0;
     width: 67%;
     z-index: 1;
-    // float: right;
-    // margin-top: 0;
   }
 } // info
 #testimonials {
   padding: 3rem 0;
   margin-bottom: 4rem;
+  position: relative;
+
+  .testimonials-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .quotes {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 4rem;
+    width: 10%;
+    z-index: 101;
+  }
 }
 #testimonialsSlider {
   width: 90%;
-  margin: 0 auto;
+  margin: -4.5rem auto 0 auto;
   text-align: center;
+  z-index: 102;
 
   .slick-prev {
     left: -10px;
@@ -105,9 +124,11 @@ $astaxLtBlue: #d4eff1;
     display: inline;
     padding: 20px 60px;
 
-    h3 {
-      font-size: 2.3rem;
-      // color: $gray700;
+    // h3 {
+    //   margin-bottom: 0;
+    // }
+    h5 {
+      margin-top: 1rem;
     }
     img {
       width: 150px;
@@ -117,6 +138,10 @@ $astaxLtBlue: #d4eff1;
       font-size: 1.7rem;
       margin: 0;
       text-align: center;
+
+      span {
+        font-weight: 400;
+      }
     }
   }
 } // testimonials Slider
@@ -125,7 +150,6 @@ $astaxLtBlue: #d4eff1;
   margin: 0 auto;
 
   .ingredients-box{
-
     text-align: center;
     // margin-bottom: 5%;
     padding-bottom: 5%;
@@ -169,11 +193,39 @@ $astaxLtBlue: #d4eff1;
 
       li {
         button:before {
-          // color: $q10purple;
           font-size: 30px;
           line-height: 20px;
         }
       }
     }
   } // ingredientsDesc
+  #info {
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    width: 70%;
+  } // info
+  #video {
+    margin: 0 auto;
+    width: 82%;
+  } // video
 } // ingredients
+#blog {
+  position: relative;
+
+  .blog-img {
+    position: relative;
+    width: 50%;
+  }
+  .blog-text {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    padding-right: 8%;
+    width: 50%;
+
+    .blog-link {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}
