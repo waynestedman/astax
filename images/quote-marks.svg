@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'Georgia';}
+	.st2{font-size:400px;}
+</style>
+<font horiz-adv-x="2048">
+<!-- Georgia is either a registered trademark or a trademark of Microsoft Corporation in the United States and/or other countries. -->
+<!-- Copyright: Copyright 2019 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Georgia" units-per-em="2048" underline-position="-181" underline-thickness="101"/>
+<missing-glyph horiz-adv-x="2048" d="M256,0l0,1536l1536,0l0,-1536M384,128l1280,0l0,1280l-1280,0z"/>
+<glyph unicode="&#x201C;" horiz-adv-x="840" d="M375,1466C344,1448 318,1433 299,1420C280,1407 260,1389 240,1368C221,1348 207,1327 197,1305C187,1283 180,1255 176,1220l48,0C265,1220 298,1210 322,1190C345,1169 357,1139 357,1100C357,1072 347,1046 326,1022C305,997 276,985 239,985C182,985 141,1004 116,1042C91,1079 79,1129 79,1190C79,1233 88,1273 107,1309C126,1344 148,1376 175,1404C202,1433 231,1457 262,1477C293,1497 318,1513 339,1526M745,1466C714,1448 688,1433 669,1420C650,1407 630,1389 610,1368C591,1347 576,1326 567,1305C557,1283 550,1255 546,1220l48,0C635,1220 668,1210 692,1190C715,1169 727,1139 727,1100C727,1072 717,1046 696,1022C675,997 646,985 609,985C552,985 511,1004 486,1042C461,1079 449,1129 449,1190C449,1233 458,1273 477,1309C496,1344 518,1376 545,1404C572,1433 601,1457 632,1477C663,1497 688,1513 709,1526z"/>
+</font>
+
+	<text transform="matrix(1 0 0 1 17.9688 340)" class="st0 st1 st2">“</text>
+</svg>

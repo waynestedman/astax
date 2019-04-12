@@ -35,17 +35,17 @@ $(document).ready(function(){
     slidesToScroll: 1,
     asNavFor: '#ingredientsDesc',
     dots: false,
-    centerMode: true,
-    centerPadding: '60px',
+    // centerMode: true,
+    // centerPadding: '60px',
     focusOnSelect: true,
     responsive: [
       {
         breakpoint: 1025,
         settings: {
           arrows: true,
-          centerMode: true,
+          // centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 5
+          slidesToShow: 4
         }
       },
       {
