@@ -297,7 +297,7 @@ body {
 
 #testimonials {
   padding: 3rem 0;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   position: relative;
 }
 
@@ -324,11 +324,11 @@ body {
 }
 
 #testimonialsSlider .slick-prev {
-  left: -10px;
+  left: 30px;
 }
 
 #testimonialsSlider .slick-next {
-  right: -10px;
+  right: 30px;
 }
 
 #testimonialsSlider .testimonial {
@@ -355,73 +355,103 @@ body {
   font-weight: 400;
 }
 
-.ingredients-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(50%, #d4eff1), to(#FFFFFF));
-  background: -o-linear-gradient(#FFFFFF, #d4eff1 50%, #FFFFFF 100%);
-  background: linear-gradient(#FFFFFF, #d4eff1 50%, #FFFFFF 100%);
-  margin: 0 auto;
+#ingredients {
+  position: relative;
 }
 
-.ingredients-wrapper .ingredients-box {
+#ingredients .ingredients-waterImg {
+  padding-top: 4rem;
+  height: 200px;
+}
+
+#ingredients .ingredients-wrapper {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(30%, #d4eff1), color-stop(50%, #d4eff1), color-stop(70%, #d4eff1), to(#FFFFFF));
+  background: -o-linear-gradient(top, #FFFFFF 0%, #d4eff1 30%, #d4eff1 50%, #d4eff1 70%, #FFFFFF 100%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #d4eff1 30%, #d4eff1 50%, #d4eff1 70%, #FFFFFF 100%);
+  margin: 8rem auto 0 auto;
+  padding-top: 4rem;
+}
+
+#ingredients .ingredients-wrapper .ingredients-box {
   text-align: center;
-  padding-bottom: 5%;
+  margin: -17rem auto 4rem auto;
+  width: 80%;
+  background-color: #FFF;
+  border: 1px solid #424649;
 }
 
-.ingredients-wrapper .ingredients-box h2 {
-  color: #FFF;
+#ingredients .ingredients-wrapper .ingredients-box h2 {
   padding-top: 30px;
   margin-bottom: 0;
 }
 
-.ingredients-wrapper #ingredientsDesc {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc {
   margin: 30px auto 0 auto;
   width: 80%;
   background-color: #FFF;
 }
 
-.ingredients-wrapper #ingredientsDesc .ingredientImg {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientImg {
   margin: 0 40px;
   float: left;
   display: inline-block;
 }
 
-.ingredients-wrapper #ingredientsDesc img {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc img {
   width: 320px;
 }
 
-.ingredients-wrapper #ingredientsDesc .ingredient-text {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text {
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
   width: 75%;
 }
 
-.ingredients-wrapper #ingredientsDesc .ingredient-text h3 {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text h3 {
   margin-bottom: 0.5rem;
 }
 
-.ingredients-wrapper #ingredientsDesc .ingredient-text h5 {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text h5 {
   font-size: 25px;
   font-weight: 300;
   margin: 0 0 18px 0;
 }
 
-.ingredients-wrapper #ingredientsDesc .slick-dots {
-  bottom: -10px;
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-prev, #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-next {
+  margin-top: 21rem;
 }
 
-.ingredients-wrapper #ingredientsDesc .slick-dots li button:before {
-  font-size: 30px;
-  line-height: 20px;
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-prev {
+  left: 140px;
 }
 
-.ingredients-wrapper #info {
-  margin: 0 auto 4rem auto;
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-next {
+  right: 140px;
+}
+
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .ingredient {
+  width: 100px !important;
+}
+
+#ingredients .ingredients-wrapper #info {
+  position: relative;
+  margin: 0 auto 6rem auto;
   text-align: center;
   width: 70%;
 }
 
-.ingredients-wrapper #video {
+#ingredients .ingredients-wrapper #info p {
+  margin-bottom: 4rem;
+}
+
+#ingredients .ingredients-wrapper #video {
   margin: 0 auto;
   width: 82%;
 }

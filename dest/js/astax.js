@@ -29,7 +29,7 @@ $(document).ready(function () {
   $('#ingredientsDesc').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
     asNavFor: '#ingredientsSlider'
   });
@@ -38,8 +38,6 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: '#ingredientsDesc',
     dots: false,
-    centerMode: false,
-    // centerPadding: '60px',
     focusOnSelect: true // responsive: [
     //   {
     //     breakpoint: 1025,
