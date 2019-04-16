@@ -460,6 +460,13 @@ body {
   opacity: 1;
 }
 
+#ingredients .ingredients-wrapper .waterBubbles-right {
+  position: absolute;
+  bottom: 38rem;
+  right: 2rem;
+  width: 13%;
+}
+
 #ingredients .ingredients-wrapper #info {
   position: relative;
   margin: 0 auto 6rem auto;

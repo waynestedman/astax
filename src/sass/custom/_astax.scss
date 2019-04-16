@@ -160,6 +160,7 @@ $astaxLtBlue: #d4eff1;
     margin: 8rem auto 0 auto;
     padding-top: 4rem;
 
+
     .ingredients-box {
       text-align: center;
       margin: -17rem auto 4rem auto;
@@ -232,6 +233,12 @@ $astaxLtBlue: #d4eff1;
         }
       }
     } // ingredients-box
+    .waterBubbles-right {
+      position: absolute;
+      bottom: 38rem;
+      right: 2rem;
+      width: 13%;
+    }
     #info {
       position: relative;
       margin: 0 auto 6rem auto;
