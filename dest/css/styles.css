@@ -370,6 +370,11 @@ body {
   height: 200px;
 }
 
+#ingredients .waterBubbles-left {
+  margin-top: 1rem;
+  width: 10%;
+}
+
 #ingredients .ingredients-wrapper {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(30%, #d4eff1), color-stop(50%, #d4eff1), color-stop(70%, #d4eff1), to(#FFFFFF));
