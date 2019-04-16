@@ -3,7 +3,6 @@
 $(document).ready(function () {
   $('#testimonialsSlider').slick({
     dots: false,
-    // arrows: true,
     // autoplay: true,
     // autoplaySpeed: 4000,
     // fade: true,
@@ -13,52 +12,31 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipe: true // responsive: [
-    //   {
-    //     breakpoint: 800,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       infinite: true
-    //     }
-    //   }
-    // ]
-
+    swipe: true
   }); // testimonials slider
 
   $('#ingredientsDesc').slick({
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+    fade: true,
+    // cssEase: 'ease-in-out',
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
-    fade: true,
+    arrows: false,
     asNavFor: '#ingredientsSlider'
   });
   $('#ingredientsSlider').slick({
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+    // fade: true,
+    // cssEase: 'ease-in-out',
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     asNavFor: '#ingredientsDesc',
     dots: false,
-    focusOnSelect: true // responsive: [
-    //   {
-    //     breakpoint: 1025,
-    //     settings: {
-    //       arrows: true,
-    //       // centerMode: true,
-    //       // centerPadding: '40px',
-    //       slidesToShow: 4
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       arrows: true,
-    //       centerMode: true,
-    //       // centerPadding: '40px',
-    //       slidesToShow: 3
-    //     }
-    //   }
-    // ]
-
+    centerMode: true,
+    centerPadding: '60px',
+    focusOnSelect: true
   });
 }); //doc ready
 

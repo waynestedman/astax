@@ -267,7 +267,7 @@ body {
 }
 
 #howTo .howTo-productDesc, #howTo .howTo-text {
-  padding-left: 4%;
+  padding-left: 10%;
   position: relative;
   width: 58%;
   z-index: 100;
@@ -283,7 +283,7 @@ body {
 }
 
 #testimonials {
-  padding: 3rem 0;
+  padding-top: 3rem;
   margin-bottom: 8rem;
   position: relative;
 }
@@ -304,27 +304,32 @@ body {
 }
 
 #testimonialsSlider {
-  width: 90%;
+  width: 89%;
   margin: -4.5rem auto 0 auto;
   text-align: center;
   z-index: 102;
 }
 
+#testimonialsSlider .slick-prev::before, #testimonialsSlider .slick-next::before {
+  font-size: 9rem;
+}
+
 #testimonialsSlider .slick-prev {
-  left: 30px;
+  left: 40px;
 }
 
 #testimonialsSlider .slick-next {
-  right: 30px;
+  right: 60px;
 }
 
 #testimonialsSlider .testimonial {
   display: inline;
-  padding: 20px 60px;
+  padding: 2rem 0;
 }
 
 #testimonialsSlider .testimonial h5 {
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
+  width: 70%;
 }
 
 #testimonialsSlider .testimonial img {
@@ -333,8 +338,9 @@ body {
 }
 
 #testimonialsSlider .testimonial blockquote {
+  font-weight: 300;
   font-size: 1.7rem;
-  margin: 0;
+  margin: 2rem auto 0 auto;
   text-align: center;
 }
 
@@ -347,7 +353,7 @@ body {
 }
 
 #ingredients .ingredients-waterImg {
-  padding-top: 4rem;
+  padding-top: 8rem;
   height: 200px;
 }
 
@@ -372,7 +378,7 @@ body {
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc {
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
   width: 80%;
   background-color: #FFF;
 }
@@ -388,9 +394,9 @@ body {
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 4rem;
   width: 75%;
 }
 
@@ -398,31 +404,45 @@ body {
   margin-bottom: 0.5rem;
 }
 
-#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text h5 {
-  font-size: 25px;
-  font-weight: 300;
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text span {
+  font-weight: 400;
   margin: 0 0 18px 0;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-prev, #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-next {
-  margin-top: 21rem;
+  margin-top: 19rem;
+}
+
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-prev::before, #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-next::before {
+  font-size: 9rem;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-prev {
-  left: 140px;
+  left: 120px;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .slick-next {
-  right: 140px;
+  right: 120px;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
+}
+
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-list {
+  margin-left: 8rem;
+  margin-bottom: 2rem;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .ingredient {
-  width: 100px !important;
+  margin: 0 1rem;
+  width: 80px !important;
+  opacity: .2;
+}
+
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-current {
+  opacity: 1;
 }
 
 #ingredients .ingredients-wrapper #info {
