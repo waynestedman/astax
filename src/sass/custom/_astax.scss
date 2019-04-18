@@ -154,21 +154,14 @@ $astaxLtBlue: #d4eff1;
     padding-top: 8rem;
     height: 200px;
   }
-  .waterBubbles-left {
-    margin-top: 1rem;
-    width: 10%;
-  }
   .ingredients-wrapper {
     position: relative;
-    background: linear-gradient(to bottom, #FFFFFF 0%, $astaxLtBlue 30%, $astaxLtBlue 50%, $astaxLtBlue 70%, #FFFFFF 100%);
-    margin: 8rem auto 0 auto;
-    padding-top: 4rem;
-
+    // background: linear-gradient(to bottom, #FFFFFF 0%, $astaxLtBlue 30%, $astaxLtBlue 50%, $astaxLtBlue 70%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(212,239,241,1) 30%,rgba(212,239,241,1) 70%,rgba(255,255,255,1) 100%);
 
     .ingredients-box {
       text-align: center;
-      margin: -17rem auto 4rem auto;
-      // padding: 0;
+      margin: -1rem auto 4rem auto;
       width: 80%;
       background-color: #FFF;
       border: 1px solid $gray700;
@@ -221,22 +214,31 @@ $astaxLtBlue: #d4eff1;
       } // ingredientsDesc
       #ingredientsSlider {
         margin: 0 auto;
-        width: 70%;
+        width: 50%;
 
-        .slick-list {
-          margin-left: 8rem;
-          margin-bottom: 2rem;
+        .slick-track {
+          // margin-left: 8rem;
+          // margin: 0 auto 2rem auto;
+          // margin-bottom: 2rem;
+          display: flex;
+          justify-content: center;
         }
         .ingredient {
           margin: 0 1rem;
           width: 80px !important;
-          opacity: .2;
+          opacity: .3;
         }
         .slick-current {
           opacity: 1;
         }
       }
     } // ingredients-box
+    .waterBubbles-left {
+      position: absolute;
+      top: 14rem;
+      left: -1rem;
+      width: 11%;
+    }
     .waterBubbles-right {
       position: absolute;
       bottom: 38rem;

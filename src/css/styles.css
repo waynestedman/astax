@@ -357,21 +357,14 @@ body {
   height: 200px;
 }
 
-#ingredients .waterBubbles-left {
-  margin-top: 1rem;
-  width: 10%;
-}
-
 #ingredients .ingredients-wrapper {
   position: relative;
-  background: linear-gradient(to bottom, #FFFFFF 0%, #d4eff1 30%, #d4eff1 50%, #d4eff1 70%, #FFFFFF 100%);
-  margin: 8rem auto 0 auto;
-  padding-top: 4rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #d4eff1 30%, #d4eff1 70%, white 100%);
 }
 
 #ingredients .ingredients-wrapper .ingredients-box {
   text-align: center;
-  margin: -17rem auto 4rem auto;
+  margin: -1rem auto 4rem auto;
   width: 80%;
   background-color: #FFF;
   border: 1px solid #424649;
@@ -432,22 +425,29 @@ body {
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider {
   margin: 0 auto;
-  width: 70%;
+  width: 50%;
 }
 
-#ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-list {
-  margin-left: 8rem;
-  margin-bottom: 2rem;
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-track {
+  display: flex;
+  justify-content: center;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .ingredient {
   margin: 0 1rem;
   width: 80px !important;
-  opacity: .2;
+  opacity: .3;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-current {
   opacity: 1;
+}
+
+#ingredients .ingredients-wrapper .waterBubbles-left {
+  position: absolute;
+  top: 14rem;
+  left: -1rem;
+  width: 11%;
 }
 
 #ingredients .ingredients-wrapper .waterBubbles-right {
