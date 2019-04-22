@@ -46,6 +46,8 @@
     }
   } // howTo
   #testimonials {
+    margin-bottom: 0;
+
     .quotes {
       width: 26%;
       padding-top: 0;
@@ -54,11 +56,23 @@
   } // testimonials
   #testimonialsSlider {
     width: 90%;
-  }
-  .ingredients {
-    .ingredients-box {
 
-    } // ingredients-box
+    .testimonial {
+      h5 {
+        width: 90%;
+      }
+    } // testimonial
+  } // testimonialsSlider
+  #ingredients {
+    .ingredients-waterImg {
+      padding-top: 0;
+      height: unset;
+    }
+    .ingredients-wrapper {
+      .ingredients-box {
+
+      } // ingredients-box
+    } // ingredients-wrapper
     #ingredientsDesc {
 
     } // ingredientsDesc

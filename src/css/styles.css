@@ -333,11 +333,6 @@ body {
   width: 70%;
 }
 
-#testimonialsSlider .testimonial img {
-  width: 150px;
-  margin: 0 auto 20px auto;
-}
-
 #testimonialsSlider .testimonial blockquote {
   font-weight: 300;
   font-size: 1.7rem;
@@ -538,6 +533,9 @@ body {
     right: unset;
     width: 100%;
   }
+  #testimonials {
+    margin-bottom: 0;
+  }
   #testimonials .quotes {
     width: 26%;
     padding-top: 0;
@@ -545,6 +543,13 @@ body {
   }
   #testimonialsSlider {
     width: 90%;
+  }
+  #testimonialsSlider .testimonial h5 {
+    width: 90%;
+  }
+  #ingredients .ingredients-waterImg {
+    padding-top: 0;
+    height: unset;
   }
 }
 
