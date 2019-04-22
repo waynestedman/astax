@@ -262,7 +262,8 @@ body {
   margin-bottom: 6rem;
   position: relative;
   text-align: left;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -496,93 +497,54 @@ body {
 }
 
 @media only screen and (max-width: 599px) {
-  #hero .hero-img {
-    margin-bottom: -70%;
-  }
   #hero .heroBox {
     position: relative;
     top: unset;
     left: unset;
-    width: 100%;
-    padding: 0 4% 4rem 4%;
+    width: 90%;
     text-align: center;
-    margin: 0 auto;
-  }
-  #hero .heroBox .heroBox-new {
-    display: none;
+    margin: -25rem auto 0 auto;
   }
   #hero .heroBox h1 {
-    font-size: 4.4rem;
+    font-size: 3.8rem;
   }
   #hero .heroBox h3 {
     font-size: 2rem;
-    font-weight: 400;
   }
-  #hero .heroBox h6 {
-    font-size: 1.8rem;
-    padding-right: 0;
-  }
-  #info .infoImg-left {
-    width: 15%;
-    float: left;
-    z-index: 4;
-    margin-top: -3rem;
-  }
-  #info .info-text {
-    position: relative;
-    top: unset;
-    left: unset;
+  #howTo {
     text-align: center;
-    margin: 6rem auto 0 auto;
-    width: 70%;
-    padding: 0;
   }
-  #info .info-text h2 {
-    margin-top: 0;
-    font-size: 4rem;
-  }
-  #info .info-text h6 {
-    font-size: 1.8rem;
-  }
-  #info .infoImg-right {
-    float: right;
-    width: 50%;
-    margin-top: -20rem;
-    max-height: 380px;
-  }
-  .ingredients .ingredients-box {
-    padding-bottom: 50px;
-  }
-  .ingredients .ingredients-box h2 {
-    margin-bottom: 30px;
-  }
-  .ingredients #ingredientsDesc {
+  #howTo .howTo-productDesc, #howTo .howTo-text {
+    padding-left: unset;
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 20px;
   }
-  .ingredients #ingredientsDesc .ingredientImg {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
+  #howTo .howTo-productDesc h2, #howTo .howTo-text h2 {
+    font-size: 3rem;
   }
-  .ingredients #ingredientsDesc .ingredient-text {
-    text-align: center;
+  #howTo .howTo-productDesc h5, #howTo .howTo-text h5 {
+    font-size: 2rem;
+  }
+  #howTo .howTo-productDesc {
+    order: 1;
+  }
+  #howTo .howTo-text {
+    order: 3;
+  }
+  #howTo .howTo-img {
+    order: 2;
+    position: relative;
+    top: unset;
+    right: unset;
+    width: 100%;
+  }
+  #testimonials .quotes {
+    width: 26%;
     padding-top: 0;
+    margin-bottom: 1.8rem;
+  }
+  #testimonialsSlider {
     width: 90%;
-  }
-  .ingredients #ingredientsDesc .ingredient-text h5 {
-    font-size: 20px;
-  }
-  .ingredients #ingredientsDesc .slick-dots {
-    bottom: -4px;
-  }
-  .ingredients #ingredientsDesc .slick-dots li {
-    width: 14px;
-    height: 14px;
-  }
-  .ingredients #ingredientsDesc .slick-dots li button:before {
-    font-size: 30px;
   }
 }
 
@@ -590,44 +552,6 @@ body {
   .content-wrapper .button-cta {
     font-size: 1.6rem;
     padding: .6rem 2rem;
-  }
-  #hero {
-    padding-bottom: 4.4rem;
-  }
-  #hero .heroBox {
-    top: 1%;
-    padding-left: 4%;
-  }
-  #hero .heroBox .heroBox-new {
-    margin-left: -0.8rem;
-    margin-top: 0.6rem;
-  }
-  #hero .heroBox h1 {
-    font-size: 4.6rem;
-    margin-bottom: .6rem;
-  }
-  #hero .heroBox h3 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-  }
-  #hero .heroBox h6 {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    padding-right: 0;
-    margin-top: 1.2rem;
-    margin-bottom: 1.4rem;
-  }
-  #info .info-text {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  #info .info-text h2 {
-    margin-top: 0;
-  }
-  #info .infoImg-right {
-    width: 80%;
-    margin-top: 9rem;
-    margin-right: -6rem;
   }
 }
 

@@ -67,7 +67,8 @@ $astaxLtBlue: #d4eff1;
   margin-bottom: 6rem;
   position: relative;
   text-align: left;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 
   .howTo-productDesc, .howTo-text {
