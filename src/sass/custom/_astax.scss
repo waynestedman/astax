@@ -171,7 +171,7 @@ $astaxLtBlue: #d4eff1;
         padding-top: 30px;
         margin-bottom: 0;
       }
-      #ingredientsDesc {
+      #ingredientsDesc { // descriptive area
         margin: 0 auto;
         width: 80%;
         background-color: #FFF;
@@ -184,7 +184,7 @@ $astaxLtBlue: #d4eff1;
         img {
           width: 320px;
         }
-        .ingredient-text {
+        .ingredientDesc-long {
           text-align: left;
           margin: 0 auto;
           padding-top: 4rem;
@@ -213,7 +213,7 @@ $astaxLtBlue: #d4eff1;
           right: 120px;
         }
       } // ingredientsDesc
-      #ingredientsSlider {
+      #ingredientsSlider { // the thumbnails
         margin: 0 auto;
         width: 50%;
 
@@ -229,7 +229,7 @@ $astaxLtBlue: #d4eff1;
         .slick-current {
           opacity: 1;
         }
-      }
+      } // ingredientsSlider
     } // ingredients-box
     .waterBubbles-left {
       position: absolute;

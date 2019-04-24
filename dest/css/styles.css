@@ -407,18 +407,18 @@ body {
   width: 320px;
 }
 
-#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long {
   text-align: left;
   margin: 0 auto;
   padding-top: 4rem;
   width: 75%;
 }
 
-#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text h3 {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long h3 {
   margin-bottom: 0.5rem;
 }
 
-#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredient-text span {
+#ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long span {
   font-weight: 400;
   margin: 0 0 18px 0;
 }
@@ -516,6 +516,12 @@ body {
 }
 
 @media only screen and (max-width: 599px) {
+  .content-wrapper h2 {
+    font-size: 3.9rem;
+  }
+  .content-wrapper .slick-list {
+    margin: 0 auto;
+  }
   #hero .heroBox {
     position: relative;
     top: unset;
@@ -580,6 +586,40 @@ body {
   #ingredients .ingredients-waterImg {
     padding-top: 0;
     height: unset;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box {
+    margin-top: -6rem;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc {
+    width: 100%;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long {
+    padding-top: unset;
+    text-align: center;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider {
+    width: 92%;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-track {
+    margin-left: -0.9rem;
+  }
+  #ingredients .ingredients-wrapper #info {
+    width: 90%;
+  }
+  #ingredients .ingredients-wrapper #video {
+    width: 100%;
+  }
+  #blog .blog-img {
+    width: 100%;
+  }
+  #blog .blog-text {
+    position: relative;
+    top: unset;
+    right: unset;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
   }
 }
 

@@ -1,4 +1,12 @@
 @media only screen and (max-width: 599px) {
+  .content-wrapper {
+    h2 {
+      font-size: 3.9rem;
+    }
+    .slick-list {
+      margin: 0 auto;
+    }
+  } // content-wrapper
   #hero {
     .heroBox {
       position: relative;
@@ -70,14 +78,46 @@
     }
     .ingredients-wrapper {
       .ingredients-box {
+        margin-top: -6rem;
 
+        #ingredientsDesc {
+          width: 100%;
+
+          .ingredientDesc-long {
+            padding-top: unset;
+            text-align: center;
+          } // ingredient-text
+        } // ingredientsDesc
+        #ingredientsSlider {
+          width: 92%;
+
+          .slick-track {
+            margin-left: -0.9rem;
+          }
+        } // ingredientsSlider
       } // ingredients-box
+      #info {
+        width: 90%;
+      } // info
+      #video {
+        width: 100%;
+      }
     } // ingredients-wrapper
-    #ingredientsDesc {
-
-    } // ingredientsDesc
   } //ingredients
-
+  #blog {
+    .blog-img {
+      width: 100%;
+    }
+    .blog-text {
+      position: relative;
+      top: unset;
+      right: unset;
+      padding-right: 0;
+      margin: 0 auto;
+      text-align: center;
+      width: 90%;
+    }
+  } // blog
 } // Mobile - everything smaller than 600
 // @media only screen and (min-width: 550px) and (max-width: 699px) {
 
