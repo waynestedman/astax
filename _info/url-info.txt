@@ -1,9 +1,11 @@
+so for main URL key: /what-is-astaxanthin-collagen
+for the UK backup: /learn-astaxanthin-collagen
+
+
+
 https://www.dhccare.com
 /media/wysiwyg/content/
 
 
 *************** Dev Ver ***************
 https://www.dhccare.com/media/wysiwyg/dev_test/astax
-
-
-https://dhc-magento.idevdesign.net/astax
