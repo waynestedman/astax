@@ -492,8 +492,19 @@ body {
 }
 
 @media only screen and (max-width: 599px) {
+  .content-wrapper h1 {
+    font-size: 3.6rem;
+  }
   .content-wrapper h2 {
-    font-size: 3.9rem;
+    font-size: 2.9rem;
+    margin-bottom: 1rem;
+  }
+  .content-wrapper h3 {
+    font-size: 1.9rem;
+  }
+  .content-wrapper h5 {
+    font-size: 2rem;
+    margin-top: 1.4rem;
   }
   .content-wrapper .slick-list {
     margin: 0 auto;
@@ -506,25 +517,17 @@ body {
     text-align: center;
     margin: -25rem auto 0 auto;
   }
-  #hero .heroBox h1 {
-    font-size: 3.8rem;
-  }
   #hero .heroBox h3 {
-    font-size: 2rem;
+    margin-bottom: 3rem;
   }
   #howTo {
     text-align: center;
+    margin-top: 2rem;
   }
   #howTo .howTo-productDesc, #howTo .howTo-text {
     padding-left: unset;
     width: 90%;
     margin: 0 auto;
-  }
-  #howTo .howTo-productDesc h2, #howTo .howTo-text h2 {
-    font-size: 3rem;
-  }
-  #howTo .howTo-productDesc h5, #howTo .howTo-text h5 {
-    font-size: 2rem;
   }
   #howTo .howTo-productDesc {
     order: 1;
@@ -548,10 +551,23 @@ body {
     margin-bottom: 1.8rem;
   }
   #testimonialsSlider {
-    width: 90%;
+    width: 98%;
+  }
+  #testimonialsSlider .slick-prev {
+    left: -36px;
+  }
+  #testimonialsSlider .slick-next {
+    right: -10px;
+  }
+  #testimonialsSlider .testimonial h3 {
+    margin-top: 1.4rem;
+    font-size: 3rem;
   }
   #testimonialsSlider .testimonial h5 {
-    width: 90%;
+    width: 86%;
+  }
+  #ingredients {
+    margin-top: -2rem;
   }
   #ingredients .ingredients-waterImg {
     padding-top: 0;
