@@ -1,4 +1,4 @@
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 649px) {
   .content-wrapper {
     h1 {
       font-size: 3.6rem;
@@ -138,16 +138,16 @@
     }
   } // blog
 } // Mobile - everything smaller than 500
-@media only screen and (min-width: 380px) and (max-width: 599px) {
-  #hero {
-    .heroBox {
-      position: absolute;
-      top: 65%;
-    }
-  } //hero
+@media only screen and (min-width: 380px) and (max-width: 649px) {
+  // #hero {
+  //   .heroBox {
+  //     position: absolute;
+  //     top: 65%;
+  //   }
+  // } //hero
 } // min 550 to max 699 - Bigger mobile exceptions
 
-@media only screen and (min-width: 850px) and (max-width: 1024px) {
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
   .content-wrapper {
     .button-cta {
       font-size: 1.6rem;
@@ -171,7 +171,7 @@
       }
     }
   } // ingredients
-} // min 600 to max 1024 - Tablet
+} // min 650 to max 1024 - Tablet
 
 // @media only screen and (min-width: 900px) and (max-width: 1024px) {
 

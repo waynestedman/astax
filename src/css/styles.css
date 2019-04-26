@@ -491,7 +491,7 @@ body {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 649px) {
   .content-wrapper h1 {
     font-size: 3.6rem;
   }
@@ -612,14 +612,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 599px) {
-  #hero .heroBox {
-    position: absolute;
-    top: 65%;
-  }
-}
-
-@media only screen and (min-width: 850px) and (max-width: 1024px) {
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
   .content-wrapper .button-cta {
     font-size: 1.6rem;
     padding: .6rem 2rem;
