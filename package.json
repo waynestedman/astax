@@ -13,8 +13,8 @@
     "url": "https://github.com/waynestedman/astax.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "autoprefixer": "^9.5.1",
     "chai": "^4.2.0",
     "gulp": "^3.9.1",
@@ -24,11 +24,11 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "mocha": "^6.1.2"
+    "mocha": "^6.1.4"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "natives": "^1.1.6",
     "npm": "^6.4.1"
   },

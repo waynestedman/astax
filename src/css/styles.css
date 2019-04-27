@@ -613,6 +613,12 @@ body {
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
+  .content-wrapper h3 {
+    font-size: 3rem;
+  }
+  .content-wrapper h5 {
+    font-size: 1.8rem;
+  }
   .content-wrapper .button-cta {
     font-size: 1.6rem;
     padding: .6rem 2rem;
@@ -621,8 +627,11 @@ body {
     margin-bottom: 4rem;
   }
   #testimonials {
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     margin-bottom: 6rem;
+  }
+  #testimonials .quotes {
+    width: 8%;
   }
   #ingredients .ingredients-wrapper .ingredients-box {
     margin-top: -3rem;

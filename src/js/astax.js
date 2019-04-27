@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#testimonialsSlider').slick({
     dots: false,
-    autoplay: true,
+    // autoplay: true,
     // autoplaySpeed: 4000,
     fade: true,
     speed: 1200,
