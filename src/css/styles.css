@@ -493,14 +493,11 @@ body {
 
 @media only screen and (max-width: 649px) {
   .content-wrapper h1 {
-    font-size: 3.6rem;
+    font-size: 4.5rem;
   }
   .content-wrapper h2 {
-    font-size: 2.9rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
-  }
-  .content-wrapper h3 {
-    font-size: 1.9rem;
   }
   .content-wrapper h5 {
     font-size: 2rem;
@@ -520,6 +517,7 @@ body {
   }
   #hero .heroBox h3 {
     margin-bottom: 3rem;
+    font-size: 2rem;
   }
   #howTo {
     text-align: center;
@@ -581,8 +579,11 @@ body {
     padding-top: 0;
     height: unset;
   }
-  #ingredients .ingredients-wrapper .ingredients-box {
-    margin-top: -6rem;
+  #ingredients .ingredients-wrapper {
+    margin-top: -11.5rem;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box h2 {
+    padding-top: 0;
   }
   #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc {
     width: 100%;
@@ -591,11 +592,23 @@ body {
     padding-top: unset;
     text-align: center;
   }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long .ingredientImg {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long .ingredientImg img {
+    width: 280px;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long .ingredient-text {
+    margin: -2rem auto 0 auto;
+    width: 90%;
+  }
   #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider {
     width: 92%;
   }
   #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-track {
-    margin-left: -0.9rem;
+    margin-bottom: 2rem;
   }
   #ingredients .ingredients-wrapper #info {
     width: 90%;
@@ -622,7 +635,7 @@ body {
 
 @media only screen and (max-width: 459px) {
   #hero .heroBox {
-    top: 50%;
+    top: 46%;
   }
 }
 
