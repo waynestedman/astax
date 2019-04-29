@@ -533,12 +533,9 @@ body {
   .content-wrapper .slick-list {
     margin: 0 auto;
   }
-  #hero .hero-img {
-    max-height: 500px;
-  }
   #hero .heroBox {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 0;
     width: 100%;
     text-align: center;
@@ -555,6 +552,10 @@ body {
     padding-left: unset;
     width: 92%;
     margin: 0 auto;
+  }
+  #howTo .howTo-productDesc h2, #howTo .howTo-text h2 {
+    margin: 0 auto;
+    width: 80%;
   }
   #howTo .howTo-productDesc {
     -webkit-box-ordinal-group: 2;
@@ -579,11 +580,13 @@ body {
     margin-bottom: 0;
   }
   #testimonials .quotes {
-    width: 26%;
+    width: 24%;
     padding-top: 0;
+    margin-top: 2rem;
     margin-bottom: 1.8rem;
   }
   #testimonialsSlider {
+    margin-top: -2rem;
     width: 98%;
   }
   #testimonialsSlider .slick-prev {
@@ -595,6 +598,8 @@ body {
   #testimonialsSlider .testimonial h3 {
     margin-top: 1.4rem;
     font-size: 3rem;
+    width: 82%;
+    margin: 0 auto;
   }
   #testimonialsSlider .testimonial h5 {
     width: 86%;
@@ -639,6 +644,15 @@ body {
     margin: 0 auto;
     text-align: center;
     width: 90%;
+  }
+  #blog .blog-text h2 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 459px) {
+  #hero .heroBox {
+    top: 50%;
   }
 }
 

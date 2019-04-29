@@ -21,11 +21,11 @@
   } // content-wrapper
   #hero {
     .hero-img {
-      max-height: 500px;
+      // max-height: 500px;
     }
     .heroBox {
       position: absolute;
-      top: 50%;
+      top: 60%;
       left: 0;
       width: 100%;
       text-align: center;
@@ -45,6 +45,11 @@
       padding-left: unset;
       width: 92%;
       margin: 0 auto;
+
+      h2 {
+        margin: 0 auto;
+        width: 80%;
+      }
     }
     .howTo-productDesc {
       order: 1;
@@ -64,12 +69,14 @@
     margin-bottom: 0;
 
     .quotes {
-      width: 26%;
+      width: 24%;
       padding-top: 0;
+      margin-top: 2rem;
       margin-bottom: 1.8rem;
     } // quotes
   } // testimonials
   #testimonialsSlider {
+    margin-top: -2rem;
     width: 98%;
 
     .slick-prev {
@@ -82,6 +89,8 @@
       h3 {
         margin-top: 1.4rem;
         font-size: 3rem;
+        width: 82%;
+        margin: 0 auto;
       }
       h5 {
         width: 86%;
@@ -135,16 +144,19 @@
       margin: 0 auto;
       text-align: center;
       width: 90%;
+
+      h2 {
+        margin-top: 0;
+      }
     }
   } // blog
-} // Mobile - everything smaller than 500
-@media only screen and (min-width: 380px) and (max-width: 649px) {
-  // #hero {
-  //   .heroBox {
-  //     position: absolute;
-  //     top: 65%;
-  //   }
-  // } //hero
+} // Mobile - everything smaller than 650
+@media only screen and (max-width: 459px) {
+  #hero {
+    .heroBox {
+      top: 50%;
+    }
+  } //hero
 } // min 550 to max 699 - Bigger mobile exceptions
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
