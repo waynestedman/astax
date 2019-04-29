@@ -653,15 +653,25 @@ body {
   #howTo {
     margin-bottom: 4rem;
   }
+  #howTo .howTo-img {
+    top: 8%;
+  }
   #testimonials {
-    padding-top: 2rem;
+    padding-top: 1.8rem;
     margin-bottom: 6rem;
   }
   #testimonials .quotes {
+    margin-bottom: 1rem;
     width: 8%;
   }
   #ingredients .ingredients-wrapper .ingredients-box {
     margin-top: -3rem;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc {
+    width: 90%;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientImg {
+    margin-left: 0;
   }
 }
 

@@ -190,18 +190,24 @@
       padding: .6rem 2rem;
     }
   }
-  #hero {
-
-  } //hero
+  // #hero {
+  //
+  // } //hero
   #howTo {
     margin-bottom: 4rem;
+
+    .howTo-img {
+      top: 8%;
+    }
   }
   #testimonials {
-    padding-top: 2rem;
+    padding-top: 1.8rem;
     margin-bottom: 6rem;
 
     .quotes {
+      margin-bottom: 1rem;
       width: 8%;
+
     }
   } // testimonials
   #testimonialsSlider {
@@ -213,11 +219,19 @@
     .ingredients-wrapper {
       .ingredients-box {
         margin-top: -3rem;
-      }
-    }
+
+        #ingredientsDesc {
+          width: 90%;
+
+          .ingredientImg {
+            margin-left: 0;
+          }
+        }
+      } // ingredients-box
+    } // ingredients-wrapper
   } // ingredients
 } // min 650 to max 1024 - Tablet
 
-// @media only screen and (min-width: 900px) and (max-width: 1024px) {
+@media only screen and (min-width: 650px) and (max-width: 850px) {
 
-// } // min 900 to max 1024 - Tablet landscape exceptions
+} // min 650 to max 850 - Tablet portrait exceptions
