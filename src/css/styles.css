@@ -675,4 +675,63 @@ body {
   }
 }
 
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+  .content-wrapper h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  #hero .heroBox {
+    top: 34%;
+  }
+  #hero .heroBox h3 {
+    font-size: 2rem;
+  }
+  #howTo .howTo-img {
+    top: 20%;
+  }
+  #testimonials .quotes {
+    padding-top: 2rem;
+  }
+  #testimonialsSlider .testimonial h3 {
+    margin-top: 0.5rem;
+    font-size: 2.6rem;
+  }
+  #ingredients .ingredients-waterImg {
+    padding-top: 1rem;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box {
+    margin-top: -14rem;
+    width: 86%;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc img {
+    width: 240px;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long {
+    padding-top: 0;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long .ingredientImg {
+    margin-right: 1rem;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsDesc .ingredientDesc-long .ingredient-text {
+    padding-top: 2rem;
+  }
+  #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider {
+    margin-bottom: 2rem;
+  }
+  #ingredients .ingredients-wrapper #video {
+    width: 100%;
+  }
+  #blog .blog-text {
+    top: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 699px) {
+  #hero .heroBox {
+    top: 58%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

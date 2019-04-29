@@ -233,5 +233,84 @@
 } // min 650 to max 1024 - Tablet
 
 @media only screen and (min-width: 650px) and (max-width: 850px) {
+  .content-wrapper {
+    h2 {
+      font-size: 4rem;
+      line-height: 1.1;
+    } // h2
+  } // content-wrapper
+  #hero {
+    .heroBox {
+      top: 34%;
 
+      h3 {
+        font-size: 2rem;
+      }
+    } // heroBox
+  } // hero
+  #howTo {
+    .howTo-img {
+      top: 20%;
+    } // howTo-img
+  } // howTo
+  #testimonials {
+    .quotes {
+      padding-top: 2rem;
+    } // quotes
+  } // testimonials
+  #testimonialsSlider {
+    .testimonial {
+      h3 {
+        margin-top: 0.5rem;
+        font-size: 2.6rem;
+      } // h3
+    } // testimonial
+  } // testimonialsSlider
+  #ingredients {
+    .ingredients-waterImg {
+      padding-top: 1rem;
+    } // ingredients-waterImg
+    .ingredients-wrapper {
+      .ingredients-box {
+        margin-top: -14rem;
+        width: 86%;
+
+        #ingredientsDesc {
+          img {
+            width: 240px;
+          }
+          .ingredientDesc-long {
+            padding-top: 0;
+
+            .ingredientImg {
+              margin-right: 1rem;
+            } // ingredientImg
+            .ingredient-text {
+              padding-top: 2rem;
+            }
+          } // ingredientDesc-long
+        } // ingredientsDesc
+        #ingredientsSlider {
+          margin-bottom: 2rem;
+        } // ingredientsSlider
+      } // ingredients-box
+      #video {
+        width: 100%;
+      } // video
+    } // ingredients-wrapper
+  } // ingredients
+  #blog {
+    .blog-text {
+      top: 0;
+      padding-right: 0;
+      width: 50%;
+    } //blog-text
+  } // blog
 } // min 650 to max 850 - Tablet portrait exceptions
+@media only screen and (min-width: 650px) and (max-width: 699px) {
+  #hero {
+    .heroBox {
+      top: 58%;
+    }
+  }
+} // min 650 to max 699 - Tablet Hero box exception
