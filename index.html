@@ -173,22 +173,24 @@
             <source srcset="./images/astax-video-m.jpg" media="(max-width: 649px)" />
             <img src="./images/astax-video.jpg" alt="Video - What The Experts Are Saying.">
           </picture>
-        </div> <!-- video -->
+        </div> <!-- video banner -->
         <div id="videoModal" class="modal">
-          <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
             <!-- <p>Some text in the Modal..</p> -->
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/8AOciuyKIqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
+            <iframe id="ytVideo" width="853" height="480" src="https://www.youtube.com/embed/8AOciuyKIqs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div> <!-- Modal content -->
+        </div> <!-- video modal -->
+        <!-- <script type="text/javascript" xml="space">// <![CDATA[ -->
         <script>
           var modal = document.getElementById('videoModal');
-          var btn = document.getElementById("video");
+          var yt = document.getElementById("ytVideo");
+          var closeBtn = document.getElementById("video");
           var span = document.getElementsByClassName("close")[0];
 
-          btn.onclick = function() {
+          closeBtn.onclick = function() {
             modal.style.display = "block";
+            yt.style.display = "inline-block";
           }
           span.onclick = function() {
             modal.style.display = "none";
@@ -199,6 +201,7 @@
             }
           }
         </script>
+        <!-- ]]></script> -->
       </div> <!-- ingredients wrapper -->
     </section> <!-- ingredients -->
     <section id="blog">
