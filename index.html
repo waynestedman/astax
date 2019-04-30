@@ -169,13 +169,39 @@
           <p><a href="https://www.dhccare.com/astaxanthin-collagen-all-in-one-gel.html" class="button-cta">shop now</a></p>
         </div> <!-- info -->
         <div id="video">
-          <a href="https://www.dhccare.com/">
-            <picture>
-              <source srcset="./images/astax-video-m.jpg" media="(max-width: 649px)" />
-              <img src="./images/astax-video.jpg" alt="Video - What The Experts Are Saying.">
-            </picture>
-          </a>
+          <picture>
+            <source srcset="./images/astax-video-m.jpg" media="(max-width: 649px)" />
+            <img src="./images/astax-video.jpg" alt="Video - What The Experts Are Saying.">
+          </picture>
         </div> <!-- video -->
+        <div id="videoModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- <p>Some text in the Modal..</p> -->
+            <video width="640" height="480" controls>
+              <source src="./images/astax-project4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <script>
+          var modal = document.getElementById('videoModal');
+          var btn = document.getElementById("video");
+          var span = document.getElementsByClassName("close")[0];
+
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
       </div> <!-- ingredients wrapper -->
     </section> <!-- ingredients -->
     <section id="blog">
