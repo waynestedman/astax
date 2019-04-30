@@ -28,7 +28,7 @@ $astaxLtBlue: #d4eff1;
     color: #fff;
     text-transform: uppercase;
     padding: 1rem 3rem;
-    border: 1px solid $gray700;
+    border: 1px solid #888;
 
     &:hover {
       background-color: $gray400;
@@ -157,7 +157,7 @@ $astaxLtBlue: #d4eff1;
       margin: -1rem auto 4rem auto;
       width: 80%;
       background-color: #FFF;
-      border: 1px solid $gray700;
+      border: 1px solid #888;
 
       h2 {
         padding-top: 30px;
@@ -252,26 +252,29 @@ $astaxLtBlue: #d4eff1;
       display: none;
       position: fixed;
       z-index: 1000;
-      padding-top: 30px;
+      padding-top: 3rem;
       // left: 0;
       // top: 0;
       // width: 82%;
-      margin-top: -17rem;
-      margin-left: auto;
-      margin-right: auto;
+      // margin-top: -18rem;
+      margin: 0 auto;
+      // margin-left: auto;
+      // margin-right: auto;
       // overflow: auto;
       position: relative;
       padding-bottom: 56.25%;
-      padding-top: 30px;
+      padding-top: 0; // 30px
       height: 0;
       overflow: hidden;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.4);
+      // background-color: rgb(0,0,0);
+      // background-color: rgba(0,0,0,0.4);
 
       .modal-content {
+        position: relative;
         background-color: #fefefe;
-        margin: auto;
-        padding: 100px;
+        margin: 0 auto;
+        width: 86%;
+        padding: 4%;
         border: 1px solid #888;
         // width: 100%;
         // max-width: 893px;
@@ -280,19 +283,25 @@ $astaxLtBlue: #d4eff1;
         // top: 0;
         // left: 0;
         // width: 100%;
-        // height: 100%;
+        height: 500px;
 
         #ytVideo {
           display: none;
           position: absolute;
           top: 0;
           left: 0;
-          width: 100%;
-          height: 100%;
+          // position: relative;
+          // margin: 0 auto;
+          padding: 4rem;
+          max-width: 100%;
+          max-height: 480px;
         }
         .close {
+          position: absolute;
+          top: 1%;
+          right: 2%;
           color: #aaaaaa;
-          float: right;
+          // float: right;
           font-size: 28px;
           font-weight: bold;
           z-index: 1010;
@@ -302,7 +311,7 @@ $astaxLtBlue: #d4eff1;
             color: #000;
             text-decoration: none;
             cursor: pointer;
-          } // hove & focus
+          } // hover & focus
         } // close button
       } // modal content
     } //videoModal

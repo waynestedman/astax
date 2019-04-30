@@ -185,19 +185,22 @@
         <script>
           var modal = document.getElementById('videoModal');
           var yt = document.getElementById("ytVideo");
-          var closeBtn = document.getElementById("video");
+          var openVid = document.getElementById("video");
           var span = document.getElementsByClassName("close")[0];
 
-          closeBtn.onclick = function() {
+          openVid.onclick = function() {
+            openVid.style.display = "none";
             modal.style.display = "block";
             yt.style.display = "inline-block";
           }
           span.onclick = function() {
             modal.style.display = "none";
+            openVid.style.display = "inherit";
           }
           window.onclick = function(event) {
             if (event.target == modal) {
               modal.style.display = "none";
+              openVid.style.display = "inherit";
             }
           }
         </script>

@@ -207,7 +207,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 1rem 3rem;
-  border: 1px solid #424649;
+  border: 1px solid #888;
 }
 
 .content-wrapper .button-cta:hover {
@@ -363,7 +363,7 @@ body {
   margin: -1rem auto 4rem auto;
   width: 80%;
   background-color: #FFF;
-  border: 1px solid #424649;
+  border: 1px solid #888;
 }
 
 #ingredients .ingredients-wrapper .ingredients-box h2 {
@@ -473,24 +473,23 @@ body {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 30px;
-  margin-top: -17rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 3rem;
+  margin: 0 auto;
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
+  padding-top: 0;
   height: 0;
   overflow: hidden;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #ingredients .ingredients-wrapper #videoModal .modal-content {
+  position: relative;
   background-color: #fefefe;
-  margin: auto;
-  padding: 100px;
+  margin: 0 auto;
+  width: 86%;
+  padding: 4%;
   border: 1px solid #888;
+  height: 500px;
 }
 
 #ingredients .ingredients-wrapper #videoModal .modal-content #ytVideo {
@@ -498,13 +497,16 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  padding: 4rem;
+  max-width: 100%;
+  max-height: 480px;
 }
 
 #ingredients .ingredients-wrapper #videoModal .modal-content .close {
+  position: absolute;
+  top: 1%;
+  right: 2%;
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   z-index: 1010;
@@ -662,6 +664,35 @@ body {
   }
   #ingredients .ingredients-wrapper #video {
     width: 100%;
+  }
+  #ingredients .ingredients-wrapper #videoModal {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  #ingredients .ingredients-wrapper #videoModal .modal-content {
+    width: 100%;
+    height: auto;
+    background: none;
+    border: none;
+  }
+  #ingredients .ingredients-wrapper #videoModal .modal-content #ytVideo {
+    position: unset;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    max-height: 338px;
+  }
+  #ingredients .ingredients-wrapper #videoModal .modal-content .close {
+    top: unset;
+    right: unset;
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1;
+    color: #BDBDBD;
+    font-size: 5rem;
   }
   #blog .blog-img {
     width: 100%;
