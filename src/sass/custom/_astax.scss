@@ -74,8 +74,17 @@ $astaxLtBlue: #d4eff1;
   .howTo-productDesc, .howTo-text {
     padding-left: 10%;
     position: relative;
-    width: 58%;
+    width: 68%;
     z-index: 100;
+
+    h5 {
+      width: 80%;
+    }
+  }
+  .howTo-text {
+    h2 {
+      width: 90%;
+    }
   }
   .howTo-img {
     display: inline-block;

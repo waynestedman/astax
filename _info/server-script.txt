@@ -1,3 +1,8 @@
+<script type="text/javascript" xml="space">// <![CDATA[
+require([
+  'jquery',
+  'slick'
+  ], function ($) {
 $(document).ready(function(){
   $('#testimonialsSlider').slick({
     dots: false,
@@ -26,7 +31,5 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 }); //doc ready
-
-const hello = (name) => {
-    return `hello ${name}`;
-};
+}); //require
+// ]]></script>

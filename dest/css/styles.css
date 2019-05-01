@@ -288,8 +288,16 @@ body {
 #howTo .howTo-productDesc, #howTo .howTo-text {
   padding-left: 10%;
   position: relative;
-  width: 58%;
+  width: 68%;
   z-index: 100;
+}
+
+#howTo .howTo-productDesc h5, #howTo .howTo-text h5 {
+  width: 80%;
+}
+
+#howTo .howTo-text h2 {
+  width: 90%;
 }
 
 #howTo .howTo-img {
@@ -597,22 +605,27 @@ body {
   }
   #howTo .howTo-productDesc, #howTo .howTo-text {
     padding-left: unset;
-    width: 92%;
+    width: 96%;
     margin: 0 auto;
   }
   #howTo .howTo-productDesc h2, #howTo .howTo-text h2 {
     margin: 0 auto;
-    width: 80%;
   }
   #howTo .howTo-productDesc {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
+  #howTo .howTo-productDesc h5 {
+    width: 100%;
+  }
   #howTo .howTo-text {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
+  }
+  #howTo .howTo-text h5 {
+    width: 100%;
   }
   #howTo .howTo-img {
     -webkit-box-ordinal-group: 3;
@@ -744,6 +757,11 @@ body {
 @media only screen and (max-width: 459px) {
   #hero .heroBox {
     top: 46%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  #howTo .howTo-productDesc h2, #howTo .howTo-text h2 {
+    font-size: 3.2rem;
   }
 }
 

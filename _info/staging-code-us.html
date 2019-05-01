@@ -1,35 +1,39 @@
-/* Focus
-$focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 3px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
-
-// Animations
-$base-duration: 150ms;
-$base-timing: ease;
-*/
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  color: #424649;
-  background: #DDDDDD;
-}
-
-.cms-page-view .column.main img {
-  margin: 0 auto;
-}
-
-.columns .column.main {
-  padding-bottom: 0;
-}
-
-.modal-popup .modal-footer {
-  display: none;
-}
-
+<script type="text/javascript" xml="space">// <![CDATA[
+require([
+  'jquery',
+  'slick'
+  ], function ($) {
+$(document).ready(function(){
+  $('#testimonialsSlider').slick({
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    speed: 1200,
+    // cssEase: 'ease-in-out',
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipe: true
+  }); // testimonials slider
+  $('#ingredientsDesc').slick({
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '#ingredientsSlider'
+  });
+  $('#ingredientsSlider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '#ingredientsDesc',
+    dots: false,
+    focusOnSelect: true
+  });
+}); //doc ready
+}); //require
+]]></script>
+<style xml="space"><!--
 .content-wrapper {
   font-weight: 300;
   max-width: 1280px;
@@ -43,6 +47,9 @@ body {
 }
 
 .content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -176,6 +183,15 @@ body {
   text-transform: uppercase;
 }
 
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeEffect {
   from {
     opacity: 0;
@@ -262,7 +278,12 @@ body {
   margin-bottom: 6rem;
   position: relative;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
@@ -363,6 +384,8 @@ body {
 
 #ingredients .ingredients-wrapper {
   position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(30%, #d4eff1), color-stop(70%, #d4eff1), to(white));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #d4eff1 30%, #d4eff1 70%, white 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #d4eff1 30%, #d4eff1 70%, white 100%);
 }
 
@@ -433,7 +456,11 @@ body {
 }
 
 #ingredients .ingredients-wrapper .ingredients-box #ingredientsSlider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -588,18 +615,24 @@ body {
     margin: 0 auto;
   }
   #howTo .howTo-productDesc {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   #howTo .howTo-productDesc h5 {
     width: 100%;
   }
   #howTo .howTo-text {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
   }
   #howTo .howTo-text h5 {
     width: 100%;
   }
   #howTo .howTo-img {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     position: relative;
     top: unset;
@@ -829,5 +862,146 @@ body {
     top: 58%;
   }
 }
+--></style>
+<div class="content-wrapper"><section id="hero">
+<div class="hero-img"><picture> <source srcset="/media/wysiwyg/content/product/astax/astaxanthin-hero-m.jpg" media="(max-width: 459px)" /> <source srcset="/media/wysiwyg/content/product/astax/astaxanthin-hero-bigger-m.jpg" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/product/astax/astaxanthin-hero.jpg" alt="DHC Astaxanthin Collagen All-in-One Gel" /> </picture></div>
+<div class="heroBox">
+<h1>All-in-One Wonder</h1>
+<h3>Brighter, firmer skin that glows.<br />All from one high-performance gel.</h3>
+<p><a class="button-cta" href="/astaxanthin-collagen-all-in-one-gel.html">shop now</a></p>
+</div>
+</section><!-- hero --><section id="howTo">
+<div class="howTo-productDesc">
+<h2>Astaxanthin Collagen<br />All-in-One Gel</h2>
+<h5>Discover how this powerful botanical ingredient delivers next-level antioxidant protection in a brightening, moisturizing gel.</h5>
+</div>
+<!-- product description -->
+<div class="howTo-text">
+<h2>Rethink Your Routine</h2>
+<h5>For a daily lift of intensive, long-lasting moisture, smooth on this creamy gel to tone, hydrate and brighten in one step.</h5>
+</div>
+<div class="howTo-img"><picture> <source srcset="/media/wysiwyg/content/product/astax/how-to-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/how-to.jpg" alt="" /> </picture></div>
+<!-- <div class="clearfix"></div> --></section><!-- how to --><section id="testimonials">
+<div class="testimonials-img"><picture> <source srcset="/media/wysiwyg/content/product/astax/testimonials-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/testimonials.jpg" alt="astaxanthin testimonials" /> </picture></div>
+<div class="quotes"><img src="/media/wysiwyg/content/product/astax/quote-marks.svg" alt="testimonial quotation marks" /></div>
+<div id="testimonialsSlider">
+<div class="testimonial one">
+<h3>Absolute BEST!</h3>
+<h5>This cream is amazing! I have noticed a HUGE difference in elasticity, fine lines (gone!) and overall texture of my skin. This is my GO TO cream and I highly recommend it!</h5>
+<blockquote><span>Connie57</span>,<br />Illinois</blockquote>
+</div>
+<div class="testimonial two">
+<h3>Really hydrating!</h3>
+<h5>Hydrated my skin after 1 day using a sample. I could feel and see the difference. Brighter, softer, dewier skin! I LOVE IT!</h5>
+<blockquote><span>Bliss_Omm</span>,<br />Maryland</blockquote>
+</div>
+<div class="testimonial three">
+<h3>Rich but not heavy.</h3>
+<h5>My skin is visibly smoother using this product. A definite difference in the appearance of my skin.</h5>
+<blockquote><span>Mamacita</span>,<br />Oregon</blockquote>
+</div>
+<div class="testimonial four">
+<h3>The perfect &rsquo;all in one&rsquo;</h3>
+<h5>I travel a lot, and finding a product which deeply moisturizes and is applied in one step is a gift!</h5>
+<blockquote><span>LeGS</span>,<br />Tennessee</blockquote>
+</div>
+<div class="testimonial five">
+<h3>Easiest way to keep skin looking good all day.</h3>
+<h5>This product has made me a believer in the advantages of gels; it smoothes on, absorbs quickly and stays all day allowing a soft glow. Quick and effective!</h5>
+<blockquote><span>Gymchick</span>,<br />Maryland</blockquote>
+</div>
+</div>
+<!-- testimonials Slider --></section><!-- testimonials --><section id="ingredients">
+<div class="ingredients-waterImg"><picture> <source srcset="/media/wysiwyg/content/product/astax/ingredients-water-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/ingredients-water.jpg" alt="water" /> </picture></div>
+<div class="ingredients-wrapper">
+<div class="ingredients-box">
+<h2>What&rsquo;s in It</h2>
+<div id="ingredientsDesc">
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source srcset="/media/wysiwyg/content/product/astax/astaxanthin-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/astaxanthin.jpg" alt="Astaxanthin" /> </picture></div>
+<div class="ingredient-text">
+<h3>Astaxanthin</h3>
+<p><span>Antioxidant</span></p>
+<p>Derived from freshwater algae and micronized for fast absorption, astaxanthin helps skin retain moisture and protects it from environmental damage.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source srcset="/media/wysiwyg/content/product/astax/vitamin-e-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/vitamin-e.jpg" alt="Vitamin E" /> </picture></div>
+<div class="ingredient-text">
+<h3>Vitamin E</h3>
+<p><span>Antioxidant, skin conditioner</span></p>
+<p>Helps prevent the signs of premature aging by protecting skin against environmental pollution.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source srcset="/media/wysiwyg/content/product/astax/hydrolyzed-collagen-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/hydrolyzed-collagen.jpg" alt="Hydrolyzed Collagen" /> </picture></div>
+<div class="ingredient-text">
+<h3>Hydrolyzed Collagen</h3>
+<p><span>Hydration booster, moisturizer</span></p>
+<p>Skin-firming collagen is processed into ultra-tiny peptides, making it more easily absorbed and leaving skin feeling soft and supple.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source srcset="/media/wysiwyg/content/product/astax/squalane-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/squalane.jpg" alt="Squalane" /> </picture></div>
+<div class="ingredient-text">
+<h3>Squalane</h3>
+<p><span>Moisturizer, skin soother</span></p>
+<p>Derived from olives, squalane is an emollient and antioxidant-rich skin protectant.</p>
+</div>
+</div>
+</div>
+<!-- ingredient descriptions -->
+<div id="ingredientsSlider">
+<div class="ingredient"><img src="/media/wysiwyg/content/product/astax/astaxanthin-th.jpg" alt="astaxanthin thumbnail" /></div>
+<div class="ingredient"><img src="/media/wysiwyg/content/product/astax/vitamin-e-th.jpg" alt="vitamin-e thumbnail" /></div>
+<div class="ingredient"><img src="/media/wysiwyg/content/product/astax/hydrolyzed-collagen-th.jpg" alt="hydrolyzed collagen thumbnail" /></div>
+<div class="ingredient"><img src="/media/wysiwyg/content/product/astax/squalane-th.jpg" alt="squalane thumbnail" /></div>
+</div>
+</div>
+<!-- ingredients box -->
+<div class="waterBubbles-left"><img src="/media/wysiwyg/content/product/astax/top-bubbles.png" alt="bubbles in water" /></div>
+<div class="waterBubbles-right"><img src="/media/wysiwyg/content/product/astax/top-bubbles.png" alt="bubbles in water" /></div>
+<div id="info">
+<h2>Discover Nature&rsquo;s Pink Powerhouse</h2>
+<p>Astaxanthin has emerged as a breakthrough ingredient in modern skincare. This high-performance antioxidant is 6,000 times more effective than vitamin C and 550 times more powerful than vitamin E in eliminating free radicals that cause premature aging. We&rsquo;ve micronized it for instant absorption and blended it with complexion boosters like hydrolyzed collagen to firm and smooth, vitamin E to protect, and sodium hyaluronate to nourish.</p>
+<p><a class="button-cta" href="/astaxanthin-collagen-all-in-one-gel.html">shop now</a></p>
+</div>
+<!-- info -->
+<div id="video"><picture> <source srcset="/media/wysiwyg/content/product/astax/astax-video-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/astax-video.jpg" alt="Video - What The Experts Are Saying." /> </picture></div>
+<!-- video banner -->
+<div id="videoModal" class="modal">
+<div class="modal-content"><span class="close">&times;</span> <!-- <p>Some text in the Modal..</p> --> <iframe id="ytVideo" src="https://www.youtube.com/embed/8AOciuyKIqs?rel=0" width="853" height="480" frameborder="0" allowfullscreen=""></iframe></div>
+<!-- Modal content --></div>
+<!-- video modal -->
+<script type="text/javascript" xml="space">// <![CDATA[
+          var modal = document.getElementById('videoModal');
+          var yt = document.getElementById("ytVideo");
+          var openVid = document.getElementById("video");
+          var span = document.getElementsByClassName("close")[0];
 
-/*# sourceMappingURL=styles.css.map */
+          openVid.onclick = function() {
+            openVid.style.display = "none";
+            modal.style.display = "block";
+            yt.style.display = "inline-block";
+          }
+          span.onclick = function() {
+            modal.style.display = "none";
+            openVid.style.display = "inherit";
+          }
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+              openVid.style.display = "inherit";
+            }
+          }
+ ]]></script>
+</div>
+<!-- ingredients wrapper --></section><!-- ingredients --><section id="blog">
+<div class="blog-img"><picture> <source srcset="/media/wysiwyg/content/product/astax/antioxidant-blog-m.jpg" media="(max-width: 649px)" /> <img src="/media/wysiwyg/content/product/astax/antioxidant-blog.jpg" alt="Why Do I Need Antioxidants? Read More." /> </picture></div>
+<div class="blog-text">
+<h2>Why Do I Need Antioxidants?</h2>
+<p>Learn more about these powerful skin protectors and why they matter to the health and beauty of your complexion.</p>
+<p><a class="blog-link" href="/blog/what-are-antioxidants-for-skin/">Read More &gt;</a></p>
+</div>
+</section></div>
+<!-- content wrapper -->

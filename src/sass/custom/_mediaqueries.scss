@@ -41,19 +41,27 @@
 
     .howTo-productDesc, .howTo-text {
       padding-left: unset;
-      width: 92%;
+      width: 96%;
       margin: 0 auto;
 
       h2 {
         margin: 0 auto;
-        width: 80%;
+        // width: 80%;
       }
     }
     .howTo-productDesc {
       order: 1;
+
+      h5 {
+        width: 100%;
+      }
     }
     .howTo-text {
       order: 3;
+
+      h5 {
+        width: 100%;
+      }
     }
     .howTo-img {
       order: 2;
@@ -206,9 +214,18 @@
   #hero {
     .heroBox {
       top: 46%;
+      padding-left: 1%;
+      padding-right: 1%;
     }
   } //hero
-} // min 550 to max 699 - Bigger mobile exceptions
+  #howTo {
+    .howTo-productDesc, .howTo-text {
+      h2 {
+        font-size: 3.2rem;
+      }
+    }
+  } // howTo
+} // to max 450 - Bigger mobile exceptions
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
   .content-wrapper {
